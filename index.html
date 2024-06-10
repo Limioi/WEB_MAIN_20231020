@@ -27,7 +27,7 @@
         <script src="js/cookie.js" defer></script>
         <script src="js/session.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="../css/button.css">        
+        <link rel="stylesheet" href="../css/button.css"> <!--추가 작성-->       
     </head>
 
     <body style="background-color: black;" onload="pop_up(); " onload="init_logined();">
@@ -81,8 +81,9 @@
               <a class="navbar-brand"></a>
               <form class="d-flex" role="search" onsubmit="return googleSearch();">  
                 <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="키워드 입력" aria-label="Search">
+                <!--버튼 스타일 변경--> 
                 <button type="submit" id="search_btn" class="btn btn-outline-primary"style="--bs-btn-font-size: .80rem;">검색</button>
-                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <div class="btn-group" role="group" aria-label="Basic outlined example"> 
                   <button type="submit" class="btn btn-outline-success" style="--bs-btn-font-size: .80rem;" onclick="location.href='/login/join.html'">회원가입</button>
                   <button type="button" class="btn btn-outline-success" style="--bs-btn-font-size: .80rem;" id="login_btn">로그인</button>
                 </div>   
