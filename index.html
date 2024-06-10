@@ -25,6 +25,7 @@
         <script src="js/security.js" defer></script>
         <script src="js/cookie.js" defer></script>
         <script src="js/session.js" defer></script>
+        <link rel="stylesheet" href="../css/button.css">
     </head>
 
     <body style="background-color: black;" onload="pop_up();"> <!--문서 몸체-->
@@ -53,22 +54,22 @@
                               <a class="nav-link" href="login/profile.html" target='_blank'>기본정보(프로필)</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">챔피언</a>
+                              <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/">챔피언</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">패치</a>
+                              <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/news/tags/patch-notes/">패치</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">새소식</a>
+                              <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/news/">새소식</a>
                             </li>
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 고객지원
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">게임 다운로드</a></li>
-                                <li><a class="dropdown-item" href="#">롤 커뮤니티</a></li>
-                                <li><a class="dropdown-item" href="#">깃허브</a></li>
+                                <li><a class="dropdown-item" href="https://download.kr.riotgames.com/league">게임 다운로드</a></li>
+                                <li><a class="dropdown-item" href="https://getbootstrap.kr/">부트스트랩</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/">깃허브</a></li>
                               </ul>
                             </li>
                           </ul>
@@ -78,9 +79,15 @@
                 <a class="navbar-brand"></a>
                 <form class="d-flex" role="search" onsubmit="return googleSearch();">
                   <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="키워드 입력" aria-label="Search">
-                  <button class="btn btn-outline-success" id="search_btn" type="submit">검색</button>
-                  <button class="btn btn-outline-success" type="submit" onclick="location.href='/login/join.html'">회원가입</button>
-                  <a href="login/login.html" class="btn btn-outline-success" id="login_btn">로그인</a> <!--웹페이지나 외부 사이트 연결-->                
+                  <button type="submit" id="search_btn" class="btn btn-outline-primary"style="--bs-btn-font-size: .80rem;">검색</button>
+                  <div class="btn-group">
+                    <a onclick="location.href='/login/join.html'" style="--bs-btn-font-size: .80rem;" type="submit" class="btn btn-outline-success">회원가입</a>
+                    <a href="login/login.html" class="btn btn-outline-success" style="--bs-btn-font-size: .80rem;" id="login_btn">로그인</a>
+                  </div>
+                  <!--
+                  <button class="btn btn-outline-success"style="--bs-btn-font-size: .80rem;" type="submit" onclick="location.href='/login/join.html'">회원가입</button>
+                  <a href="login/login.html"class="btn btn-outline-success"style="--bs-btn-font-size: .80rem;"id="login_btn">로그인</a>
+                  -->                
                 </form>
 
               </div>
@@ -96,7 +103,7 @@
               <table class="table" border="5">
                 <!--<caption><h3 style="color: white;">인기 캐릭터</h3></caption>-->
                 <thead>
-                  <tr class="table-info">
+                  <tr class="table-dark">
                     <th scope="col">#</th>
                     <th scope="col">1</th>
                     <th scope="col">2</th>
@@ -106,23 +113,23 @@
                   </tr>
                 </thead>
                   <tbody>
-                      <tr bgcolor="red">
+                      <tr class="table-secondary" bgcolor="red">
                       <th scope="row">1</th>
-                      <td class="table-danger" width="300" rowspan="1">사이온</td>
+                      <td width="300" rowspan="1">사이온</td>
                       <td>아리</td>
                       <td>가렌</td>
                       <td>가렌2</td>
                       <td>가렌3</td>
                       </tr>
-                      <tr>
+                      <tr class="table-secondary">
                       <th scope="row">2</th>
-                      <td class="table-danger" bgcolor="blue"><b>카직스</b></td>
+                      <td bgcolor="blue"><b>카직스</b></td>
                       <td>루시안</td>
                       <td>루시안2</td>
                       <td colspan="1"><font size="13">바이</font></td>
                       <td colspan="1"><font size="13">바이2</font></td>                        
                       </tr>
-                      <tr class="table-primary" bgcolor="grey">
+                      <tr class="table-secondary" bgcolor="grey">
                         <th scope="row">3</th>
                         <td ><a href="https://www.leagueoflegends.com/ko-kr/">롤 웹사이트 접속하기</a></td>
                         <td></td>

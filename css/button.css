@@ -1,0 +1,8 @@
+/* 키워드 입력창 크기 조정 */
+.form-control {
+    width: 48%; /* 너비 */
+    height: 40px; /* 높이 */
+    font-size: 15px; /* 글씨 크기 */
+}
+
+  

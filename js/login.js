@@ -98,8 +98,10 @@ const check_input = () => {
             else
             { // 아이디 체크 x
                 setCookie("id", emailValue.value, 0); //날짜를 0 - 쿠키 삭제
-            }
+            }    
     };
+
+     
     
 
 function addJavascript(jsname) // 자바스크립트 외부 연동
